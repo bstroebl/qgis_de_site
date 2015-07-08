@@ -10,48 +10,48 @@ body {
 }
 
 h1, h2 {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4 {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 table, form{
-	text-align: justify;
-	margin-top: 30px;
+    text-align: justify;
+    margin-top: 30px;
 }
 
 a {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 a:hover {
-	text-decoration: none;
-	color: rgb(240, 173, 78);
+    text-decoration: none;
+    color: rgb(240, 173, 78);
 }
 
-a:focus, 
+a:focus,
 a:active,
 a:visited,
 a:link {
-	outline: none;
-	text-decoration: none;
+    outline: none;
+    text-decoration: none;
 }
 
 .navbar {
-	background-color: rgb(61, 61, 61);
-	border: 0px;
+    background-color: rgb(61, 61, 61);
+    border: 0px;
 }
 
 .navbar-brand {
   height: 70px;
   width: 90px;
-  background: url("../images/qgis_pt.png") no-repeat scroll 10px 0px;
+  background: url("../images/qgis_de.png") no-repeat scroll 10px 0px;
 }
 
 .navbar-nav {
-	text-align: left;
+    text-align: left;
 }
 
 .navbar-nav > li > a {
@@ -66,22 +66,22 @@ a:link {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-	background-color: rgb(61, 61, 61) !important;	
+    background-color: rgb(61, 61, 61) !important;
 }
 
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-	border-bottom: 5px solid rgb(228, 243, 99) !important;
+    border-bottom: 5px solid rgb(228, 243, 99) !important;
 }
 
 .dropdown-menu {
-	padding: 4px !important;
-	background-color: rgb(234, 235, 235);
+    padding: 4px !important;
+    background-color: rgb(234, 235, 235);
 }
 
 .dropdown-menu > li {
-	text-align: left;
+    text-align: left;
 }
 
 .dropdown-menu > .active > a,
@@ -89,8 +89,8 @@ a:link {
 .dropdown-menu > .active > a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	color: rgb(228, 243, 99);
-	background-color: rgb(61, 61, 61);
+    color: rgb(228, 243, 99);
+    background-color: rgb(61, 61, 61);
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -101,9 +101,9 @@ a:link {
 }
 
 @media (max-width: 767px) {
-	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		color: white;
-	}
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
 }
 
 .navbar-brand:hover,
@@ -121,107 +121,107 @@ a:link {
 }
 
 .navbar-toggle {
-	padding: 17px 15px;
-	background-color: rgb(61, 61, 61) !important;
+    padding: 17px 15px;
+    background-color: rgb(61, 61, 61) !important;
 }
 
 .navbar-toggle:hover {
-	border-color: rgb(228, 243, 99);
+    border-color: rgb(228, 243, 99);
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar {
-	background-color: rgb(228, 243, 99) !important;
+    background-color: rgb(228, 243, 99) !important;
 }
 
 .slideshow-container {
-	margin-top: 66px;
-	text-align: center;
-	height: auto;
+    margin-top: 66px;
+    text-align: center;
+    height: auto;
 }
 
 .meeting-container {
-	background: rgba(200,200,200,0.6);
-	height: auto;
-	padding: 20px;
+    background: rgba(200,200,200,0.6);
+    height: auto;
+    padding: 20px;
 }
 
 .meeting {
-	display: inline-block;
-	padding: 0px 25px 5px 25px;
+    display: inline-block;
+    padding: 0px 25px 5px 25px;
 }
 
 .meeting > h1 {
-	color: rgb(16, 128, 0);
-	font-weight: 700;
-	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-	font-size: 40px;
+    color: rgb(16, 128, 0);
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    font-size: 40px;
 }
 
 .meeting > h2 {
-	color: white;
-	font-weight: 700;
-	text-shadow: 3px 3px 2px rgba(100, 100, 100, 0.5);
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px rgba(100, 100, 100, 0.5);
 }
 
 .time-to-event {
-	display: inline-block;
+    display: inline-block;
 }
 
 .days , .hours, .minutes, .seconds{
-	display: inline-block;
-	border: 0px solid white;
-	width: 95px;
-	height: 95px;
-	border-radius: 47px;
-	font-size: 15px;
-	font-weight: 300;
-	margin: 20px 6px 6px 6px;
-	background-color: rgba(255,255,255,0.7);
-	
+    display: inline-block;
+    border: 0px solid white;
+    width: 95px;
+    height: 95px;
+    border-radius: 47px;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px 6px 6px 6px;
+    background-color: rgba(255,255,255,0.7);
+
 }
 
 .timer-text {
-	font-size: 40px;
+    font-size: 40px;
 }
 
 .meeting-btns {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .meeting-btns > a {
-	width: 220px;
-	margin: 0px 20px 20px 20px;
+    width: 220px;
+    margin: 0px 20px 20px 20px;
 }
 
 .container {
-	border: 1px solid rgb(190, 188, 188);
-	border-radius: 6px;
-	margin: 20px 10px 0px 10px;
-	background-color: rgba(255, 255, 255, 0.9);
-	display: inline-block;
+    border: 1px solid rgb(190, 188, 188);
+    border-radius: 6px;
+    margin: 20px 10px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
 }
 
 .adjust-margin {
-	margin-top: 86px;
+    margin-top: 86px;
 }
 
 .row {
-	padding: 20px 30px 10px 30px;
+    padding: 20px 30px 10px 30px;
 }
 
 .row > p,
 .section > p {
-	text-align: justify;
+    text-align: justify;
 }
 
 .row > p:first-of-type,
 .section > p:first-of-type {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .section > ul {
-	text-align: justify;
-	margin-left: -20px;
+    text-align: justify;
+    margin-left: -20px;
 }
 
 
@@ -233,9 +233,9 @@ div.section:before {
 }
 
 .group-title {
-	margin-left: -5px;
-	text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
-	font-size: 50px;
+    margin-left: -5px;
+    text-shadow: 1px 1px 2px rgba(100, 100, 100, 0.5);
+    font-size: 50px;
 }
 
 .sub-menu {
@@ -245,450 +245,450 @@ div.section:before {
 }
 
 .sub-menu > li {
-	display: inline;
-	list-style-type: none;
+    display: inline;
+    list-style-type: none;
 }
 
 .sub-menu > li:before { content: "| "; }
 .sub-menu > li:first-child:before { content: ""; }
 
 .sub-menu > li > a:hover {
-	text-decoration: none;
-	color: rgb(240, 173, 78);
-	/* color: rgb(16, 128, 0); */
+    text-decoration: none;
+    color: rgb(240, 173, 78);
+    /* color: rgb(16, 128, 0); */
 }
 
 footer {
-	margin-top: 20px;
-	background-color: rgb(61, 61, 61);
-	padding: 20px 20px 10px 20px;
-	bottom: 0px;
+    margin-top: 20px;
+    background-color: rgb(61, 61, 61);
+    padding: 20px 20px 10px 20px;
+    bottom: 0px;
 }
 
 footer > .container {
-	border: 0px;
-	border-radius: 0px;
-	background-color: transparent;
-	margin-top: 0px;
-	text-align: justify;
-	color: white;
-	font-size: 14px;
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    margin-top: 0px;
+    text-align: justify;
+    color: white;
+    font-size: 14px;
 }
 
 footer > .container > .row {
-	padding: 0px;
+    padding: 0px;
 }
 
 .copyright {
-	float: left;
-	max-width: 500px;
+    float: left;
+    max-width: 500px;
 }
 
 .social {
-	float: right;
-	width: 290px;
-	margin-top: 10px;
+    float: right;
+    width: 290px;
+    margin-top: 10px;
 }
 
 .naturalgis-btn {
-	float: right;
-	width: 115px;
-	margin-top: 10px;
+    float: right;
+    width: 115px;
+    margin-top: 10px;
 }
 
 .footer-naturalgis {
-	/*margin-top: 2px !important;*/
-	background-position: center center;
-	background-repeat: no-repeat;
-	width: 108px;
-	height: 50px;
-	display: inline-block;
-	border-radius: 5px;
-	margin-left: 5px;
-	margin-top: -15px;
-	background-color: rgb(130, 130, 130);
-	transition: all 0.2s ease 0s;
+    /*margin-top: 2px !important;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 108px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: -15px;
+    background-color: rgb(130, 130, 130);
+    transition: all 0.2s ease 0s;
 }
 
 .naturalgisfooter {
-	background-image: url(../images/naturalgis.png);
-	background-size: 100px;
+    background-image: url(../images/naturalgis.png);
+    background-size: 100px;
 }
 
 .naturalgisfooter:hover {
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .footer-btn {
-	background-position: center center;
-	background-repeat: no-repeat;
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-	border-radius: 5px;
-	margin-left: 5px;
-	background-color: rgb(130, 130, 130);
-	transition: all 0.2s ease 0s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: rgb(130, 130, 130);
+    transition: all 0.2s ease 0s;
 }
 
 .facebook {
-	background-image: url(../images/facebook.png);
+    background-image: url(../images/facebook.png);
 }
 
 .facebook:hover {
-	background-color: rgb(60, 90, 153);
+    background-color: rgb(60, 90, 153);
 }
 
 .google-plus {
-	background-image: url(../images/google-plus.png);
+    background-image: url(../images/google-plus.png);
 }
 
 .google-plus:hover {
-	background-color: rgb(220, 74, 56);
+    background-color: rgb(220, 74, 56);
 }
 
 .twitter {
-	background-image: url(../images/twitter.png);
+    background-image: url(../images/twitter.png);
 }
 
 .twitter:hover {
-	background-color: rgb(42, 169, 224);
+    background-color: rgb(42, 169, 224);
 }
 
 .github {
-	background-image: url(../images/github.png);
+    background-image: url(../images/github.png);
 }
 
 .github:hover {
-	background-color: rgb(98, 227, 255);
+    background-color: rgb(98, 227, 255);
 }
 
 .mailing-list {
-	background-image: url(../images/mailing-list.png);
+    background-image: url(../images/mailing-list.png);
 }
 
 .mailing-list:hover {
-	background-color: rgb(92, 184, 92);
+    background-color: rgb(92, 184, 92);
 }
 
 .hosting {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .qgis-text {
-	text-align: justify;
-	padding-left: 0px;
-	margin-left: -10px;
+    text-align: justify;
+    padding-left: 0px;
+    margin-left: -10px;
 }
 
 .qgis-images {
-	display: inline-block;
-	
+    display: inline-block;
+
 }
 
 .osgeo {
-	background-position: center center;
-	background-repeat: no-repeat;
-	width: 200px;
-	height: 87px;
-	background-image: url(../images/osgeo.png);
-	display: block;
-	margin: 10px auto 10px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 87px;
+    background-image: url(../images/osgeo.png);
+    display: block;
+    margin: 10px auto 10px auto;
 }
 
 .qgis {
-	background-position: center center;
-	background-repeat: no-repeat;
-	width: 79px;
-	height: 87px;
-	background-image: url(../images/qgis.png);
-	display: block;
-	margin: 10px auto 0px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 87px;
+    background-image: url(../images/qgis.png);
+    display: block;
+    margin: 10px auto 0px auto;
 }
 
 #map {
-	height: 300px;
-	margin-bottom: 20px;
+    height: 300px;
+    margin-bottom: 20px;
 }
 
 .list-btn {
-	margin-top: 20px;
-	width: 320px;
+    margin-top: 20px;
+    width: 320px;
 }.
 
 .list-btn:last-child {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .table-links td {
-	text-align: left;
-	vertical-align: middle !important;
-	width: 33%;
+    text-align: left;
+    vertical-align: middle !important;
+    width: 33%;
 }
 
 .sponsors {
-	text-align: justify;
+    text-align: justify;
 }
 
 .sponsors-img {
-	display: inline-block;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 100px;
-	margin-bottom: 15px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-bottom: 15px;
 }
 
 .naturalgis {
-	background-image: url(../images/sponsors/naturalgis_small.png);
-	width: 195px;
+    background-image: url(../images/sponsors/naturalgis_small.png);
+    width: 195px;
 }
 
 .ubi {
-	background-image: url(../images/sponsors/ubi.png);
-	width: 195px;
+    background-image: url(../images/sponsors/ubi.png);
+    width: 195px;
 }
 
 .form-control-feedback {
-	top: 32px !important;
+    top: 32px !important;
 }
 
 .btn-form {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 #form-alert {
-	display: none;
-	text-align: justify;
-	font-size: 12px;
-	margin-top: 5px;
-	margin-bottom: 0px;
-	padding: 10px;
+    display: none;
+    text-align: justify;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding: 10px;
 }
 
 #form-alert-text {
-	margin-left: 10px;
+    margin-left: 10px;
 }
 
 .paypal {
-	background-image: url(../images/paypal-logo.jpg);
-	background-position: bottom center;
-	background-repeat: no-repeat;
-	height: 62px;
-	width: 166px;
+    background-image: url(../images/paypal-logo.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 62px;
+    width: 166px;
 }
 
 div#redes-sociais:before {
-	content: "";
+    content: "";
     display: block;
     margin: -10px 0 0;
 }
 
 .stats-subtitle {
-	font-size: 13px;
+    font-size: 13px;
 }
 
 .stats-text {
-	line-height: 1;
-	font-size: 15px;
-	text-align: justify;
+    line-height: 1;
+    font-size: 15px;
+    text-align: justify;
 }
 
 .traducao {
-	margin-top: -40px;
+    margin-top: -40px;
 }
 
 /* BLOG */
 .search-box {
-	margin-top: 17px;
+    margin-top: 17px;
 }
 
 .search-glow:focus {
-	border-color: rgb(228, 243, 99);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(228, 243, 99, 1);
+    border-color: rgb(228, 243, 99);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(228, 243, 99, 1);
 }
 
 .rss {
-	width: 60px;
-	height: 60px;
-	margin-top: 10px;
-	background-image: url(../images/rss.png);
-	background-position: center 3px;
-	background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    background-image: url(../images/rss.png);
+    background-position: center 3px;
+    background-repeat: no-repeat;
 }
 
 #main {
-	margin-top: 85px;
-	text-align: justify;
+    margin-top: 85px;
+    text-align: justify;
 }
 
 .entry-title > a {
-	display: block;
-	color: rgb(108, 106, 106);
-	font-weight: 400;
-	padding: 5px;
+    display: block;
+    color: rgb(108, 106, 106);
+    font-weight: 400;
+    padding: 5px;
 }
 
 .entry-title > a:hover {
-	color: rgb(228, 243, 99);
-	background-color: rgb(61, 61, 61);
-	border-radius: 5px;
+    color: rgb(228, 243, 99);
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
 }
 
 .entry-title-static {
-	padding: 5px;
+    padding: 5px;
 }
 
 .entry-content {
-	margin-left: 8px;
+    margin-left: 8px;
 }
 
 .entry-content > ul {
-	text-align: justify;
-	margin-left: -5px;
+    text-align: justify;
+    margin-left: -5px;
 }
 
 .blog-time {
-	font-size: 14px;
-	margin-left: 8px;
-	margin-top: -20px;
-	padding-bottom: 10px;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: -20px;
+    padding-bottom: 10px;
 }
 
 .blog-section {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .blog-section > h1 {
-	font-size: 14px;
-	margin: 0px;
-	color: rgb(153, 153, 153);
-	margin-bottom: 10px;
+    font-size: 14px;
+    margin: 0px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 10px;
 }
 
 #recent_posts,
 #tag-cloud {
-	list-style-type: none;
-	margin-bottom: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
 }
 
 .post {
-	padding-left: 0px;
-	margin-left: -43px;
-	text-align: left;
-	font-size: 14px;
+    padding-left: 0px;
+    margin-left: -43px;
+    text-align: left;
+    font-size: 14px;
 }
 .post > a {
-	padding: 3px;
-	display: block;
+    padding: 3px;
+    display: block;
 }
 
 .tag {
-	text-align: left;
-	font-size: 14px;
+    text-align: left;
+    font-size: 14px;
 }
 
 .post > a:hover {
-	background: rgb(238, 238, 238);
+    background: rgb(238, 238, 238);
 }
 
 .meta {
-	font-size: 14px;
-	margin-top: 20px;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 .post-metadata {
-	margin-top: 30px;
-	margin-left: 8px;
-	font-size: 14px;
+    margin-top: 30px;
+    margin-left: 8px;
+    font-size: 14px;
 }
 
 .post-metadata > .sharing {
-	margin-top: 15px;
-	margin-left: 0px;
+    margin-top: 15px;
+    margin-left: 0px;
 }
 
 .post-img {
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .post-img > a > img {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 .read-more {
-	margin-top: -2px;
-	margin-left: 5px;
+    margin-top: -2px;
+    margin-left: 5px;
 }
 
 .powered {
-	font-size: 10px;
-	text-align: right;
+    font-size: 10px;
+    text-align: right;
 }
 
 .pager {
-	font-size: 12px;
+    font-size: 12px;
 }
 
 .adjust-jumbotron {
-	padding-left: 20px !important;
-	padding-right: 20px !important;
-	padding-top: 1px !important;
-	padding-bottom: 10px !important;
-	margin-bottom: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 1px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
 }
 
 .jumbotron > h2 > a {
-	display: block;
-	color: rgb(108, 106, 106);
-	font-weight: 400;
-	padding: 5px;
+    display: block;
+    color: rgb(108, 106, 106);
+    font-weight: 400;
+    padding: 5px;
 }
 
 .jumbotron > h2 > a:hover {
-	color: rgb(228, 243, 99);
-	background-color: rgb(61, 61, 61);
-	border-radius: 5px;
+    color: rgb(228, 243, 99);
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
 }
 
 .jumbotron > .blog-time {
-	margin-top: -10px;
-	padding-bottom: 0px;
+    margin-top: -10px;
+    padding-bottom: 0px;
 }
 
 .jumbotron > .post-metadata {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .sharing {
-	margin-top: 40px;
-	display: block;
+    margin-top: 40px;
+    display: block;
 }
 
 .fb-like {
-	bottom: 5px;
+    bottom: 5px;
 }
 
 .disqus {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .gravatar {
-	float: left;
-	margin-right: 10px;
-	margin-top: 4px;
-	box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.5);
+    float: left;
+    margin-right: 10px;
+    margin-top: 4px;
+    box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.5);
 }
 
 .wrap-url {
-	white-space: pre;           /* CSS 2.0 */
-	white-space: pre-wrap;      /* CSS 2.1 */
-	white-space: pre-line;      /* CSS 3.0 */
-	white-space: -pre-wrap;     /* Opera 4-6 */
-	white-space: -o-pre-wrap;   /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space: -hp-pre-wrap;  /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
 }
