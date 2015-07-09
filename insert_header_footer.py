@@ -22,10 +22,15 @@ email                : bernhard.stroebl@jena.de
 import codecs
 import sys
 import glob
+import os
 
 def main():
     headerFN = "head.html"
     footerFN = "footer.html"
+    targetDir = "deploy"
+
+    if not os.path.exists(targetDir):
+        os.makedirs(targetDir)
 
     try:
         headerFile = codecs.open(headerFN, 'r', "utf_8")
@@ -47,7 +52,7 @@ def main():
     for aFN in glob.glob('*.html'):
         if aFN != headerFN and aFN != footerFN:
             inFile = codecs.open(aFN, 'r', "utf_8")
-            outFile = codecs.open("deploy/" + aFN, "w", "utf_8")
+            outFile = codecs.open(targetDir + "/" + aFN, "w", "utf_8")
             contents = inFile.read()
             inFile.close()
             contents = contents.replace("<!--#include file=\"head.html\" -->", header)
