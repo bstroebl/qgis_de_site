@@ -219,11 +219,15 @@ a:link {
     margin-top: 40px;
 }
 
-.section > ul {
+.row > ul, ol {
     text-align: justify;
     margin-left: -20px;
 }
 
+.section > ul, ol {
+    text-align: justify;
+    margin-left: -20px;
+}
 
 div.section:before {
     content: "";
@@ -286,7 +290,7 @@ footer > .container > .row {
 
 .social {
     float: right;
-    width: 290px;
+    width: 114px;
     margin-top: 10px;
 }
 

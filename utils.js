@@ -15,8 +15,8 @@ jQuery(document).ready(function() {
         //TIMER EVENT
         var current = new Date();
         $('.time-to-event').countdown({
-            until: new Date(2015, 5, 5, 9, 30, 0),
-            layout:'<div class="days"><span class="timer-text">{dn}</span> <br>Dias</div> <div class="hours"><span class="timer-text">{hn}</span> <br>Horas</div> <div class="minutes"><span class="timer-text">{mn}</span> <br>Minutos</div> <div class="seconds"><span class="timer-text">{sn}</span> <br>Segundos</div>'
+            until: new Date(2015, 9, 25, 9, 00, 0),
+            layout:'<div class="days"><span class="timer-text">{dn}</span> <br>Tage</div> <div class="hours"><span class="timer-text">{hn}</span> <br>Stunden</div> <div class="minutes"><span class="timer-text">{mn}</span> <br>Minuten</div> <div class="seconds"><span class="timer-text">{sn}</span> <br>Sekunden</div>'
         });
     }
 
