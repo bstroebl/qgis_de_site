@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
 
     //EVENT MAP
     if ($('#map').size() != 0){
-        var map = L.map('map', {scrollWheelZoom: false}).setView([51.32170, 9.50310], 13);
+        var map = L.map('map', {scrollWheelZoom: true}).setView([51.32170, 9.50310], 13);
 
         var mapquestUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png';
         var subDomains = ['otile1','otile2','otile3','otile4'];
