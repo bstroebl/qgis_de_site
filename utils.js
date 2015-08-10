@@ -32,8 +32,10 @@ jQuery(document).ready(function() {
 
         mapquest.addTo(map);
 
-        var marker = L.marker([51.32170, 9.50310]).addTo(map);
-        marker.bindPopup("<b>Universität Kassel</b><br>FB 6 Architektur, Stadtplanung, Landschaftsplanung<br><b>Koordinaten WGS84</b><br>N51° 19.297 E009° 30.179").openPopup();
+        var wsmarker = L.marker([51.32190, 9.50310]).addTo(map);
+        wsmarker.bindPopup("<b>Workshops</b><br>im Gebäude K10");
+        var hsmarker = L.marker([51.32250, 9.50570]).addTo(map);
+        hsmarker.bindPopup("<b>Vorträge</b><br>im Hörsaal V").openPopup();
     }
 
     //MAKE SURE FOOTER IS AT THE BOTTOM OF THE PAGE ON LOAD AND RESIZE
