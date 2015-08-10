@@ -14,8 +14,8 @@ jQuery(document).ready(function() {
 
         //TIMER EVENT
         var current = new Date();
-        $('.time-to-event').countdown({
-            until: new Date(2015, 9, 25, 9, 00, 0),
+        $('.time-to-event').countdown({ // JS-Date constructor expects month from 0 to 11, to show this we use the month itself and subtract 1
+            until: new Date(2015, 9 - 1, 25, 9, 00, 0),
             layout:'<div class="days"><span class="timer-text">{dn}</span> <br>Tage</div> <div class="hours"><span class="timer-text">{hn}</span> <br>Stunden</div> <div class="minutes"><span class="timer-text">{mn}</span> <br>Minuten</div> <div class="seconds"><span class="timer-text">{sn}</span> <br>Sekunden</div>'
         });
     }
