@@ -47,7 +47,7 @@
             </p>
             <p>
                 <ul>
-                    <li><a href="#fallstudie1">Fallstudie 1</a></li>
+                    <li><a href="#fallstudie1">MoLayer: Mobile Erfassung von Informationen</a></li>
                 </ul>
             </p>
         </div>
@@ -56,12 +56,54 @@
     <div class="container adjust-margin">
         <div class="row">
             <div id=fallstudie1 class="section">
-                <h1>Fallstudie 1</h1>
+                <h1>MoLayer: Mobile Erfassung von Informationen</h1>
             </div>
         </div>
         <div class="row">
-            <p>Hier könnte Ihre Fallstudie stehen, schicken Sie sie uns!
+            <h2>Einführung</h2>
+            <p>In der Vermessungs- und Katasterverwaltung Niedersachsens wird im 3-Jahresturnus die Landesfläche beflogen. Die Luftbilder werden anschließend auch dafür genutzt, den Gebäudebestand mit dem amtlichen Nachweis der Gebäude in ALKIS abzugleichen. In den Luftbildern taucht eine größere Zahl von Gebäuden auf, die in ALKIS nicht nachgewiesen werden. Manche davon sind nach den Kriterien der Katasterverwaltung einmessungspflichtig, manche nicht. Oft ist das im Luftbild nicht zu erkennen und es muss ein örtlicher Vergleich durchgeführt werden. Diese Vorgehensweise wurde in der Vergangenheit auf analogen Kartenausschnitten dokumentiert, die nach dem Abschluss des gesamten Verfahrens vernichtet wurden. Im nächsten 3-Jahresturnus wurden Gebäude, die im Luftbild erkennbar waren, wieder örtlich verglichen, auch wenn sie im letzten Turnus schon als nicht-einmessungspflichtig eingestuft wurden. Durch ein digitales Dokumentationsverfahren werden die analogen Auszüge überflüssig, und ein mehrfaches Vergleichen derselben Objekte wird vermieden. –</p>
+            <p>In der Katasterverwaltung wird ArcMap von Esri als GIS-System eingesetzt. Für den Einsatz vor Ort müssten dafür weitere Lizenzen gekauft werden. Da dieser zusätzliche Kostenfaktor vermieden werden soll, wird QGIS als kostenlose und leistungsfähige Alternative eingesetzt. Ursprünglich im Rahmen einer Bachelorarbeit ist zusätzlich ein python-plugin entstanden, welches über eine Menüoberfläche in QGIS die Erfassung neuer Objekte mit Attributen ermöglicht.
             </p>
+            
+            <h2>Beschreibung</h2>
+            <p>Für den örtlichen Vergleich wird ein 10,1-Zoll-Tablet mit Windows7 genutzt. Als Grundlage dient QGIS. Für die Personen, die vor Ort erfassen (in der Regel ohne GIS-Erfahrung), wird die Oberfläche von QGIS so einfach wie möglich gehalten; nicht benötigte Menüknöpfe werden ausgeblendet. Für die Erfassung der Daten in einem mobilen shape-Layer (MoLayer) wird ein plugin mit eigener Erfassungsoberfläche verwendet. Das plugin in QGIS tut im Wesentlichen folgendes:</p>
+            <p>
+            <ul>
+                <li>Auf einer zentralen PostGIS-Datenbank wird der ALKIS-Grundriss in zehn shape-Layern in einem tar-Archiv bereitgestellt. Das plugin holt dieses Archiv nach der Prüfung auf Vollständigkeit auf den lokalen Rechner, entpackt es dort und lädt die aktualisierten Layer in ein spezielles Projekt. Dieser Aktualisierungsvorgang wird nur durchgeführt, wenn der Anwender den entsprechenden Button klickt.</li>
+                <li>Da die ALKIS-shapes das Gebiet eines ganzen Landkreises abdecken, müssen die Layer entsprechend gesteuert werden, damit das ganze Projekt performant bleibt: Welcher Layer wird bei welchem Maßstab mit welchem Aussehen präsentiert? Dies wird ebenfalls durch das plugin gesteuert.</li>
+                <li>Der MoLayer wird vom plugin auf die gleiche Weise auf den lokalen Rechner geladen.</li>
+                <li>In der Örtlichkeit werden neue Objekte im MoLayer erfasst (Lage und Attribute) und in der shape-Datei zwischengespeichert.</li>
+                <li>Das plugin setzt auch zu löschende Objekte auf einen Löschstatus.</li>
+                <li>Nach Abschluss der örtlichen Arbeiten werden alle neuen und gelöschten Datensätze als sql-Statements exportiert und auf die zentrale PostGIS-Datenbank kopiert. Dort werden sie nachts in den MoLayer übernommen.</li>
+                <li>Mit dem plugin können auch Statistik- und Suchfunktionen im Datenbestand durchgeführt und angezeigt werden.</li>
+                <li>Vom plugin aus kann ein Handbuch direkt aufgerufen werden.</li>
+                <li>Im plugin kann jeder Benutzer individuelle Einstellungen vornehmen; z.B.:
+                <ul>
+                    <li>Menügröße.</li>
+                    <li>Anzeige nicht aller, sondern nur der Objekte im MoLayer, die ein bestimmtes	Alter haben.</li>    
+                </ul>
+                Diese Einstellungen werden in den QSettings gespeichert, und bleiben auch bei einem Neustart von QGIS oder des Rechners solange erhalten, bis der Benutzer etwas anderes einstellt und speichert.</li>
+            </ul>
+            </p>
+            <p><img title="10,1-Zoll-Tablet mit Windows 7 (Gewicht ca 900g)" alt="10,1-Zoll-Tablet mit Windows 7 (Gewicht ca 900g)" style="width: 728; height: auto;" src="images/fallstudie/fallstudie1_bild1.jpg"></img></p>
+            <p><img title="10,1-Zoll-Tablet mit Windows 7 (Gewicht ca 900g)" alt="10,1-Zoll-Tablet mit Windows 7 (Gewicht ca 900g)" style="width: 573; height: auto;" src="images/fallstudie/fallstudie1_bild2.jpg"></img></p>
+            <p><img title="Datenkreislauf" alt="Datenkreislauf" style="width: 728; height: auto;" src="images/fallstudie/fallstudie1_bild3.png"></img></p>
+            <p>
+            Wie in diesem Schaubild an dem grünen Kasten zu erkennen ist, gibt es in den Katasterämtern Niedersachsens auch einen Viewer, der ebenfalls von der zentralen PostGIS-Datenbank gespeist wird, und in dem der MoLayer eingebunden ist. Die örtliche Erfassung mit dem QGIS-plugin ist aber völlig unabhängig davon.</p>
+            <p><img title="reduzierte QGIS-Oberfläche mit dem plugin" style="width: 100%; height: auto;" alt="reduzierte QGIS-Oberfläche mit dem plugin" src="images/fallstudie/fallstudie1_bild4.png"></img></p>
+            <p><img title="Erfassungsmaske des plugins" alt="Erfassungsmaske des plugins" style="width: 455; height: auto;" src="images/fallstudie/fallstudie1_bild5.png"></img></p>
+            <p>Im oberen Bereich wird die Klassifizierung eines neuen Objektes vorgenommen, darunter können weitere Attribute zum Objekt erfasst werden.</p>
+            
+            <h2>Fazit</h2>
+            <p>Das plugin hat sich in der Katasterverwaltung bewährt. Auch GIS-unerfahrenes Personal kann in vielen Fällen mit dem System arbeiten, wenn es von vorne herein möglichst einfach an die Hand gegeben wird. QGIS in der Grundeinstellung direkt nach der Installation ist dafür zu unübersichtlich. Wichtig ist auch ein leichter Tablet-PC: Es sollte ein Kilogramm Gewicht möglichst nicht überschritten werden. Smartphones mit Android haben ein zu kleines Display – 10,1 Zoll wird von vielen als Minimum empfunden.<br>
+            Das QGIS-plugin zur Erfassung vor Ort in einem mobilen Layer (MoLayer) ist für viele Fälle einsetzbar. Der Code muss dabei auf den individuellen Fall angepasst werden. Der Ablauf wird aber immer ähnlich sein.<br>
+            Welche Art von Grundriss benötigt wird, ist individuell einstellbar; hier ist es ALKIS in zehn shape-Layern. Das könnten auch Rasterdaten sein, Open-Street-Map-Daten oder andere.<br>
+            Wo die zentrale Datenbank liegt, also wo der MoLayer im Original gespeichert wird, ist dabei unerheblich; theoretisch kann es auch eine lokale Datenbank sein.<br>
+            Das Importformat für die Datenbank, das Ergebnis dessen, was örtlich erfasst wurde, ist sql.<br>
+            Das Exportformat für die Datenbank, die Daten, die dann in QGIS benutzt werden, ist in diesem Falle shape, kann aber auch SpatialLite sein. Grundsätzlich kann es jedes Format sein, das die Datenbank exportieren und QGIS lesen kann. </p>
+            
+            <h2>Autoren</h2>
+            <p>Entstanden ist das plugin im Rahmen einer Bachelorarbeit in 2013 durch Elke Crone (Matrikelnummer 5024199 – Jadehochschule Wilhelmshaven, Oldenburg, Elsfleth). Es wurde und wird umfassend angepasst und erweitert durch Uwe Brengelmann (LGLN Niedersachsen, RD Oldenburg-Cloppenburg, Katasteramt Wildeshausen).</p>
         </div>
     </div>
 
